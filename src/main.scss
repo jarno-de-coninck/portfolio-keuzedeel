@@ -25,3 +25,12 @@ body {
 button{
   background-color: $primary !important;
 }
+
+.projectElement{
+  background-color: rgb(44, 44, 44);
+}
+
+.scrollingFrame{
+  overflow-y: hidden;
+  // white-space: nowrap;
+}
