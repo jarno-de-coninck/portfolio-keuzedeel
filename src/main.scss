@@ -32,5 +32,28 @@ button{
 
 .scrollingFrame{
   overflow-y: hidden;
-  // white-space: nowrap;
 }
+
+.scrollingFrame {
+  height: 50%;
+  margin-top: 6%;
+  padding: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: #1c1c1c #2b2b2b;
+}
+
+.scrollingFrame::-webkit-scrollbar {
+  width: 12px; /* Width of the vertical scrollbar */
+  height: 12px; /* Height of the horizontal scrollbar */
+}
+
+
+.projectElement {
+  flex-shrink: 0;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
