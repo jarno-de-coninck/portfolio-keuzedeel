@@ -42,15 +42,8 @@ button{
   scrollbar-color: #1c1c1c #2b2b2b;
 }
 
-.scrollingFrame::-webkit-scrollbar {
-  width: 12px; /* Width of the vertical scrollbar */
-  height: 12px; /* Height of the horizontal scrollbar */
-}
-
-
 .projectElement {
-  flex-shrink: 0;
-  width: 250px;
+  width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -10,7 +10,7 @@ function Projects() {
           <div className="projectElement mx-2">
             <img src="https://storage.pubble.nl/65142601/content/2022/10/5fb76747-4b09-43c3-82a2-2973231ee4e5_thumb1920.jpg" alt="Kaasboederij" className="img-fluid rounded-2" />
             <h3 className="mainColor mt-2">Kaasboederij</h3>
-            <p className="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam facilisis ultricies tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam facilisis ultricies tellus.</p>
+            <p className="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam facilisis ultricies tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam facilisis ultricies tellus. ies tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam facilisis ultricies tellus.</p>
           </div>
           
           <div className="projectElement mx-2">
