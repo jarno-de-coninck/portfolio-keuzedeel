@@ -78,3 +78,14 @@ button{
 .darkBg {
   background-color: $dark2;
 }
+
+.darkBgMain {
+  background-color: $dark1;
+}
+
+.projectDiv {
+  padding: 10px;
+  flex-basis: 32%;
+  border: $dark1 3px solid !important;
+  border-radius: 10px;
+} 

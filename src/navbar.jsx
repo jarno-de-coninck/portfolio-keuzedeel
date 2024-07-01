@@ -13,7 +13,7 @@ function NavBar() {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="collapse navbar-collapse justify-content-end px-5" id="navbarNav">
+        <div className="collapse navbar-collapse justify-content-end px-5 darkBgMain" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item px-3">
               <NavLink exact className="nav-link" to="/">

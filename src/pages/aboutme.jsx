@@ -1,96 +1,90 @@
-import { useState } from 'react'
-
+import React from 'react';
+  
 function AboutMe() {
   return (
-    <div className="h-75 my-auto w-100">
-      <h1 className='fw-bold'>Over mij</h1>
-      <div className="row justify-content-between align-items-center d-flex h-75">
-        <div className="col-md-3 d-flex flex-column text-center h-50">
-          <img className='mx-auto mb-4' src="./images/myself.png" alt="" width={120} />
-          <h3 className='mainColor mt-auto'>Project Roi</h3>
-          <p>Learn more about my hobbies and teamroles.</p>
+    <div className="container-fluid h-100 my-auto">
+      <h1 className="fw-bold text-center mb-4">Over mij</h1>
+      <div className="row justify-content-around align-items-stretch h-75">
+        {/* Project Roi Section */}
+        <div className="col-12 col-sm-6 col-md-4 d-flex flex-column text-center mb-3 mb-md-0">
+          <img className="mx-auto mb-4 img-fluid" src="./images/myself.png" alt="Myself" style={{ maxWidth: '120px' }} />
+          <h3 className="mainColor mt-auto">Project Roi</h3>
+          <p>Learn more about my hobbies and team roles.</p>
           <div className="d-flex flex-column gap-2">
-            <button className='btn px-4 fw-bold text-white w-50 mx-auto'>My CV</button>
-            <button className='btn px-4 fw-bold text-white w-50 mx-auto' data-bs-toggle="modal" data-bs-target="#myHobbies">Learn more</button>
+            <button className="btn btn-primary fw-bold text-white w-100">My CV</button>
+            <button className="btn btn-secondary fw-bold text-white w-100" data-bs-toggle="modal" data-bs-target="#myHobbies">Learn more</button>
           </div>
         </div>
-        <div className="col-md-3 d-flex flex-column text-center h-50">
-          <img className='mx-auto mb-4' src="./images/education.png" alt="" width={120} />
-          <h3 className='mainColor mt-auto'>Project Roi</h3>
+
+        {/* Education Section */}
+        <div className="col-12 col-sm-6 col-md-4 d-flex flex-column text-center mb-3 mb-md-0">
+          <img className="mx-auto mb-4 img-fluid" src="./images/education.png" alt="Education" style={{ maxWidth: '120px' }} />
+          <h3 className="mainColor mt-auto">Project Roi</h3>
           <p>Find out why I chose this career path and how it is going so far.</p>
-          <button className='btn px-4 fw-bold text-white w-50 mx-auto' data-bs-toggle="modal" data-bs-target="#myCareer">Learn more</button>
+          <button className="btn btn-secondary fw-bold text-white w-100" data-bs-toggle="modal" data-bs-target="#myCareer">Learn more</button>
         </div>
 
-        <div className="col-md-3 d-flex flex-column text-center h-50">
-          <img className='mx-auto mb-4' src="./images/skills.png" alt="" width={120} />
-          <h3 className='mainColor mt-auto'>Project Roi</h3>
-          <p>Find out what kinds of skill I have.</p>
-          <button className='btn px-4 fw-bold text-white w-50 mx-auto' data-bs-toggle="modal" data-bs-target="#mySkills">Learn more</button>
+        {/* Skills Section */}
+        <div className="col-12 col-sm-6 col-md-4 d-flex flex-column text-center">
+          <img className="mx-auto mb-4 img-fluid" src="./images/skills.png" alt="Skills" style={{ maxWidth: '120px' }} />
+          <h3 className="mainColor mt-auto">Project Roi</h3>
+          <p>Find out what kinds of skills I have.</p>
+          <button className="btn btn-secondary fw-bold text-white w-100" data-bs-toggle="modal" data-bs-target="#mySkills">Learn more</button>
         </div>
       </div>
-      {/* Modal skills */}
-      <div class="modal" id="mySkills">
-      <div class="modal-dialog">
-            <div class="modal-content projectElement">
 
-              <div class="modal-header projectElement">
-                <h4 class="modal-title">Modal Heading</h4>
-              </div>
-
-              <div class="modal-body projectElement">
-                Modal body..
-              </div>
-
-              <div class="modal-footer projectElement">
-                <button type="button" class="btn btn-danger border border-dark" data-bs-dismiss="modal">Close</button>
-              </div>
+      {/* Modal for Skills */}
+      <div className="modal fade" id="mySkills" tabIndex="-1" aria-labelledby="mySkillsLabel" aria-hidden="true">
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content projectElement">
+            <div className="modal-header projectElement">
+              <h4 className="modal-title" id="mySkillsLabel">Skills</h4>
+            </div>
+            <div className="modal-body projectElement">
+              Detailed information about my skills.
+            </div>
+            <div className="modal-footer projectElement">
+              <button type="button" className="btn btn-danger border border-dark" data-bs-dismiss="modal">Close</button>
             </div>
           </div>
         </div>
+      </div>
 
-
-      {/* Modal career */}
-      <div class="modal" id="myCareer">
-      <div class="modal-dialog">
-            <div class="modal-content projectElement">
-
-              <div class="modal-header projectElement">
-                <h4 class="modal-title">Modal Heading</h4>
-              </div>
-
-              <div class="modal-body projectElement">
-                Modal body..
-              </div>
-
-              <div class="modal-footer projectElement">
-                <button type="button" class="btn btn-danger border border-dark" data-bs-dismiss="modal">Close</button>
-              </div>
+      {/* Modal for Career */}
+      <div className="modal fade" id="myCareer" tabIndex="-1" aria-labelledby="myCareerLabel" aria-hidden="true">
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content projectElement">
+            <div className="modal-header projectElement">
+              <h4 className="modal-title" id="myCareerLabel">Career</h4>
+            </div>
+            <div className="modal-body projectElement">
+              Detailed information about my career.
+            </div>
+            <div className="modal-footer projectElement">
+              <button type="button" className="btn btn-danger border border-dark" data-bs-dismiss="modal">Close</button>
             </div>
           </div>
         </div>
+      </div>
 
-      {/* Modal hobbies */}
-      <div class="modal" id="myHobbies">
-      <div class="modal-dialog">
-            <div class="modal-content projectElement">
-
-              <div class="modal-header projectElement">
-                <h4 class="modal-title">Modal Heading</h4>
-              </div>
-
-              <div class="modal-body projectElement">
-                Modal body..
-              </div>
-
-              <div class="modal-footer projectElement">
-                <button type="button" class="btn btn-danger border border-dark" data-bs-dismiss="modal">Close</button>
-              </div>
+      {/* Modal for Hobbies */}
+      <div className="modal fade" id="myHobbies" tabIndex="-1" aria-labelledby="myHobbiesLabel" aria-hidden="true">
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content projectElement">
+            <div className="modal-header projectElement">
+              <h4 className="modal-title" id="myHobbiesLabel">Hobbies</h4>
+            </div>
+            <div className="modal-body projectElement">
+              Detailed information about my hobbies.
+            </div>
+            <div className="modal-footer projectElement">
+              <button type="button" className="btn btn-danger border border-dark" data-bs-dismiss="modal">Close</button>
             </div>
           </div>
         </div>
-
+      </div>
     </div>
   )
 }
 
-export default AboutMe
+export default AboutMe;
