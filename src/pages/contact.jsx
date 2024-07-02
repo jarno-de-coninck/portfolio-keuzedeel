@@ -92,7 +92,7 @@ function Contact() {
           <p><strong>Telefoonnummer:</strong> <a href="tel:+1234567890" className="text-white">+31 123 456 7890</a></p>
           <p><strong>Adres:</strong></p>
           <p>1234 Straatnaam</p>
-          <p>5678 Stad</p>
+          <p>5678 Dorp</p>
           <p>Nederland</p>
         </div>
       </div>
