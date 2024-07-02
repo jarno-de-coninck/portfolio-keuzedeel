@@ -1,33 +1,46 @@
 import React from 'react';
-  
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 function AboutMe() {
   return (
     <div className="container-fluid h-100 my-auto">
       <h1 className="fw-bold text-center mb-4">Over mij</h1>
-      <div className="row justify-content-around align-items-stretch h-75">
+      <div className="row">
         {/* Project Roi Section */}
-        <div className="col-12 col-sm-6 col-md-4 d-flex flex-column text-center mb-3 mb-md-0">
-          <img className="mx-auto mb-4 img-fluid" src="./images/myself.png" alt="Myself" style={{ maxWidth: '120px' }} />
-          <h3 className="mainColor mt-auto">Project Roi</h3>
+        <div className="col-12 col-sm-6 col-md-4 d-flex flex-column text-center mb-3 mb-md-0 align-items-center">
+          <img 
+            className="img-fluid mb-4 aboutMeImage"
+            src="./images/myself.png"
+            alt="Myself"
+          />
+          <h3 className="mainColor">Project Roi</h3>
           <p>Learn more about my hobbies and team roles.</p>
-          <div className="d-flex flex-column gap-2">
+          <div className="d-flex flex-column gap-2 w-100 px-3">
             <button className="btn btn-primary fw-bold text-white w-100">My CV</button>
             <button className="btn btn-secondary fw-bold text-white w-100" data-bs-toggle="modal" data-bs-target="#myHobbies">Learn more</button>
           </div>
         </div>
 
         {/* Education Section */}
-        <div className="col-12 col-sm-6 col-md-4 d-flex flex-column text-center mb-3 mb-md-0">
-          <img className="mx-auto mb-4 img-fluid" src="./images/education.png" alt="Education" style={{ maxWidth: '120px' }} />
-          <h3 className="mainColor mt-auto">Project Roi</h3>
+        <div className="col-12 col-sm-6 col-md-4 d-flex flex-column text-center mb-3 mb-md-0 align-items-center">
+          <img 
+            className="img-fluid mb-4 aboutMeImage"
+            src="./images/education.png"
+            alt="Education"
+          />
+          <h3 className="mainColor">Project Roi</h3>
           <p>Find out why I chose this career path and how it is going so far.</p>
           <button className="btn btn-secondary fw-bold text-white w-100" data-bs-toggle="modal" data-bs-target="#myCareer">Learn more</button>
         </div>
 
         {/* Skills Section */}
-        <div className="col-12 col-sm-6 col-md-4 d-flex flex-column text-center">
-          <img className="mx-auto mb-4 img-fluid" src="./images/skills.png" alt="Skills" style={{ maxWidth: '120px' }} />
-          <h3 className="mainColor mt-auto">Project Roi</h3>
+        <div className="col-12 col-sm-6 col-md-4 d-flex flex-column text-center align-items-center">
+          <img 
+            className="img-fluid mb-4 aboutMeImage"
+            src="./images/skills.png"
+            alt="Skills"
+          />
+          <h3 className="mainColor">Project Roi</h3>
           <p>Find out what kinds of skills I have.</p>
           <button className="btn btn-secondary fw-bold text-white w-100" data-bs-toggle="modal" data-bs-target="#mySkills">Learn more</button>
         </div>
@@ -84,7 +97,7 @@ function AboutMe() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default AboutMe;
