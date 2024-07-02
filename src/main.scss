@@ -32,10 +32,6 @@ button{
   background-color: $primary !important;
 }
 
-.projectElement{
-  background-color: $dark2
-}
-
 .scrollingFrame{
   overflow-y: hidden;
 }
@@ -49,11 +45,10 @@ button{
 }
 
 .projectElement {
-  width: 400px;
+  background-color: $dark2;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
 }
 
 .formStyling {

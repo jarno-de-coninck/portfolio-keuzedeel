@@ -41,7 +41,7 @@ function Contact() {
           <div className="row justify-content-center">
             <div className="col-md-10 col-lg-8">
               <h2 className="text-center mb-4 fw-bold">Contacteer mij</h2>
-              <form onSubmit={handleSubmit}>
+              <div onSubmit={handleSubmit}>
                 <div className="mb-3">
                   <input
                     type="text"
@@ -72,10 +72,25 @@ function Contact() {
                     onChange={handleChange}
                   ></textarea>
                 </div>
-                <button type="submit" className="btn btn-primary w-100">
+                <button type="submit" className="btn btn-primary w-100"
+                  href="mailto:Reielts@student.scalda.nl" className="text-white"
+                  onClick={() => {
+                    const nameInput = document.getElementById('name');
+                    const subjectInput = document.getElementById('email');
+                    const messageInput = document.getElementById('message');
+        
+                    const name = encodeURIComponent(nameInput.value);
+                    const subject = encodeURIComponent(subjectInput.value);
+                    const message = encodeURIComponent(messageInput.value);
+        
+                    const mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=Reielts@student.scalda.nl&su=${subject}&body=From ${name},%0A%0A${message}`;
+        
+                    window.open(mailtoLink, '_blank');
+                  }}
+                >
                   Stuur bericht
                 </button>
-              </form>
+              </div>
               {formStatus.message && (
                 <div
                   className={`mt-3 p-2 text-center ${formStatus.isSuccess ? 'bg-primary text-white rounded' : 'bg-danger text-white rounded'}`}
@@ -88,7 +103,7 @@ function Contact() {
         </div>
         <div className="col-lg-4 darkBg text-white rounded p-4">
           <h3 className="text-center mb-4 fw-bold">Contact Informatie</h3>
-          <p><strong>Email:</strong> <a href="mailto:example@example.com" className="text-white">example@example.com</a></p>
+          <p><strong>Email:</strong> <a href="mailto:Reielts@student.scalda.nl" className="text-white">Reielts@student.scalda.nl</a></p>
           <p><strong>Telefoonnummer:</strong> <a href="tel:+1234567890" className="text-white">+31 123 456 7890</a></p>
           <p><strong>Adres:</strong></p>
           <p>1234 Straatnaam</p>
