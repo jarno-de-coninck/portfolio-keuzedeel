@@ -2,11 +2,6 @@ $primary: rgb(67, 132, 216);
 $dark1: rgb(26, 26, 26);
 $dark2: rgb(39, 39, 39);
 
-body {
-  background-color: $dark1 !important;
-  color: rgb(210, 210, 210) !important;
-}
-
 .active {
   border-radius: 10px !important;
   background-color: $primary !important;
@@ -88,4 +83,19 @@ button{
 .aboutMeImage {
   max-height: 150px;
   max-width: 100%;
+}
+
+.modal-dialog{
+  max-width: max-content !important;
+  min-width: 95%;
+  width: 30%;
+}
+
+@media screen and (max-width: 1000px) {
+  .projectDiv{
+    flex-basis: 100%;
+  }
+  .scrolling-frame{
+    margin: 0 !important;
+  }
 }

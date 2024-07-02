@@ -11,6 +11,8 @@ import Contact from "./pages/contact.jsx";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
 import './main.scss'
+import './main.css'
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Router>

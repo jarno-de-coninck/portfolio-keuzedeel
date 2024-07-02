@@ -10,7 +10,7 @@ function Projects() {
           <div className="scrolling-frame d-flex flex-wrap overflow-auto justify-content-center m-3">
 
             <div className="projectDiv m-1">
-              <img src="./images/pasimo.png" alt="Project" className="img-fluid rounded-2 mb-2"/>
+              <img src="./images/pasimo.png" alt="Project" loading="lazy" className="img-fluid rounded-2 mb-2"/>
 
             <h3 className="main-color mt-2">Pasimo</h3>
               <p className="m-0">
@@ -20,7 +20,7 @@ function Projects() {
             </div>
             
             <div className="projectDiv m-1">
-              <img src="./images/slideHub.png" alt="Project" className="img-fluid rounded-2 mb-2"/>
+              <img src="./images/slideHub.png" alt="Project" loading="lazy" className="img-fluid rounded-2 mb-2"/>
 
             <h3 className="main-color mt-2">SlideHub</h3>
               <p className="m-0">
@@ -29,7 +29,7 @@ function Projects() {
 
             </div>
             <div className="projectDiv m-1">
-              <img src="./images/qr-goats.png" alt="Project" className="img-fluid rounded-2 mb-2"/>
+              <img src="./images/qr-goats.png" alt="Project" loading="lazy" className="img-fluid rounded-2 mb-2"/>
 
             <h3 className="main-color mt-2">QR-Goats</h3>
               <p className="m-0">

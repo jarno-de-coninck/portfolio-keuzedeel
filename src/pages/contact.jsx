@@ -35,8 +35,8 @@ function Contact() {
   };
 
   return (
-    <div className="container mt-5">
-      <div className="row">
+    <div className="container mt-5 h-75 d-flex align-items-center">
+      <div className="row w-100">
         <div className="col-lg-8 text-white mb-4 mb-lg-0">
           <div className="row justify-content-center">
             <div className="col-md-10 col-lg-8">
@@ -70,10 +70,11 @@ function Contact() {
                     placeholder="Bericht"
                     value={formData.message}
                     onChange={handleChange}
+                    style={{ resize: 'none' }}
                   ></textarea>
                 </div>
-                <button type="submit" className="btn btn-primary w-100"
-                  href="mailto:Reielts@student.scalda.nl" className="text-white"
+                <button type="submit" className="btn btn-primary w-100 text-white"
+                  href="mailto:reielts@student.scalda.nl"
                   onClick={() => {
                     const nameInput = document.getElementById('name');
                     const subjectInput = document.getElementById('email');
@@ -106,8 +107,8 @@ function Contact() {
           <p><strong>Email:</strong> <a href="mailto:Reielts@student.scalda.nl" className="text-white">Reielts@student.scalda.nl</a></p>
           <p><strong>Telefoonnummer:</strong> <a href="tel:+1234567890" className="text-white">+31 123 456 7890</a></p>
           <p><strong>Adres:</strong></p>
-          <p>1234 Straatnaam</p>
-          <p>5678 Dorp</p>
+          <p>33 Arendhof</p>
+          <p>4451EB Heinkenszand</p>
           <p>Nederland</p>
         </div>
       </div>

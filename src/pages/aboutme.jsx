@@ -5,7 +5,7 @@ function AboutMe() {
   return (
     <div className="container-fluid h-100 my-auto">
       <h1 className="fw-bold text-center mb-4">Over mij</h1>
-      <div className="row">
+      <div className="row justify-content-center align-items-center h-75">
         {/* About me Section */}
         <div className="col-12 col-sm-6 col-md-4 d-flex flex-column text-center mb-3 mb-md-0 align-items-center">
           <img 
@@ -28,7 +28,7 @@ function AboutMe() {
             src="./images/education.png"
             alt="Education"
           />
-          <h3 className="mainColor">Project Roi</h3>
+          <h3 className="mainColor">Ervaringen</h3>
           <p>Ontdek waarom ik dit carrièrepad heb gekozen en hoe het tot nu toe bevalt.</p>
           <button className="btn btn-secondary fw-bold text-white w-100" data-bs-toggle="modal" data-bs-target="#myCareer">Leer meer</button>
         </div>
@@ -40,7 +40,7 @@ function AboutMe() {
             src="./images/skills.png"
             alt="Skills"
           />
-          <h3 className="mainColor">Project Roi</h3>
+          <h3 className="mainColor">Kennisvaardigheden</h3>
           <p>Ontdek welke vaardigheden ik beheers.</p>
           <button className="btn btn-secondary fw-bold text-white w-100" data-bs-toggle="modal" data-bs-target="#mySkills">Leer meer</button>
         </div>
@@ -55,10 +55,10 @@ function AboutMe() {
             </div>
             <div className="modal-body projectElement">
             <h5>Back-End</h5>
-              In de back-end heb ik vaardigheden opgedaan in Java, SQL, Python en verschillende frameworks zoals Hibernate, Struts en Django. Deze vaardigheden stellen me in staat om robuuste en efficiënte server-side applicaties te ontwikkelen, gegevensbeheer effectief te verwerken en dynamische weboplossingen te creëren.
+              In de back-end heb ik vaardigheden opgedaan in Java, SQL, C#, Python en verschillende frameworks zoals Hibernate en struts 2. Deze vaardigheden stellen me in staat om robuuste en efficiënte server-side applicaties te ontwikkelen, gegevensbeheer effectief te verwerken en dynamische weboplossingen te creëren.
               <br/><br/>
               <h5>Front-End</h5>
-              Aan de front-end kant ben ik goed thuis in Bootstrap, HTML/CSS en JavaScript. Deze expertise stelt me in staat om visueel aantrekkelijke en gebruiksvriendelijke interfaces te maken, waardoor een boeiende ervaring voor websitebezoekers en applicatiegebruikers wordt gegarandeerd.
+              Aan de front-end kant ben ik goed thuis in Bootstrap, angular, React, React Native, HTML/CSS, SCSS, TypeScript en JavaScript. Deze expertise stelt me in staat om visueel aantrekkelijke en gebruiksvriendelijke interfaces te maken, waardoor een boeiende ervaring voor websitebezoekers en applicatiegebruikers wordt gegarandeerd.
 
             </div>
             <div className="modal-footer projectElement">
@@ -113,9 +113,6 @@ function AboutMe() {
             <br/><br/>
             <h5>Programmeer Kennis Opdoen:<br/></h5>
             Ik ben altijd gefascineerd door technologie en hoe dingen werken. Programmeren voelt als het leren van een nieuwe taal die je de mogelijkheid geeft om je eigen wereld te creëren. Ik besteed uren aan het leren van nieuwe programmeertalen en technieken, en ik geniet van de uitdaging om complexe problemen op te lossen. Het moment wanneer een stukje code eindelijk werkt zoals je het had bedacht, dat geeft echt voldoening. Bovendien is het geweldig om te zien hoe je ideeën tot leven komen in de vorm van een werkende applicatie.
-            <br/><br/>
-            <h5>Gamen:<br/></h5>
-            Gamen is mijn favoriete manier om te ontspannen en in andere werelden te duiken. Of ik nu alleen speel of met vrienden, ik geniet van de spanning en het avontuur dat elke game biedt. Het is een geweldige manier om mijn creativiteit te stimuleren en strategisch denken te oefenen. Van RPG's waar ik epische verhalen kan beleven, tot competitieve spellen waar ik mijn vaardigheden kan testen tegen anderen, gamen biedt een eindeloze bron van vermaak en uitdaging.
             </div>
             <div className="modal-footer projectElement">
               <button type="button" className="btn btn-danger border border-dark" data-bs-dismiss="modal">Sluit</button>
