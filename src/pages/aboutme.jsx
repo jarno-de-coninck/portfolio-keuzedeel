@@ -12,6 +12,7 @@ function AboutMe() {
             className="img-fluid mb-4 aboutMeImage"
             src="./images/myself.png"
             alt="Myself"
+            loading="lazy"
           />
           <h3 className="mainColor">Hobbies</h3>
           <p>Leer meer over mijn hobbies.</p>
@@ -27,6 +28,7 @@ function AboutMe() {
             className="img-fluid mb-4 aboutMeImage"
             src="./images/education.png"
             alt="Education"
+            loading="lazy"
           />
           <h3 className="mainColor">Ervaringen</h3>
           <p>Ontdek waarom ik dit carrièrepad heb gekozen en hoe het tot nu toe bevalt.</p>
@@ -39,6 +41,7 @@ function AboutMe() {
             className="img-fluid mb-4 aboutMeImage"
             src="./images/skills.png"
             alt="Skills"
+            loading="lazy"
           />
           <h3 className="mainColor">Kennisvaardigheden</h3>
           <p>Ontdek welke vaardigheden ik beheers.</p>
