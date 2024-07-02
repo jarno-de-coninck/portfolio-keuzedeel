@@ -16,22 +16,22 @@ function NavBar() {
         <div className="collapse navbar-collapse justify-content-end px-5 darkBgMain" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item px-3">
-              <NavLink exact className="nav-link" to="/">
+              <NavLink exact className="nav-link" to="/portfolio-keuzedeel/">
                 Home
               </NavLink>
             </li>
             <li className="nav-item px-3">
-              <NavLink className="nav-link" to="/aboutme">
+              <NavLink className="nav-link" to="/portfolio-keuzedeel/aboutme">
                 Over mij
               </NavLink>
             </li>
             <li className="nav-item px-3">
-              <NavLink className="nav-link" to="/projects">
+              <NavLink className="nav-link" to="/portfolio-keuzedeel/projects">
                 Projecten
               </NavLink>
             </li>
             <li className="nav-item px-3">
-              <NavLink className="nav-link" to="/contact">
+              <NavLink className="nav-link" to="/portfolio-keuzedeel/contact">
                 Contact
               </NavLink>
             </li>

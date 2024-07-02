@@ -17,10 +17,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <NavBar />
     <div id='page' className="px-5 d-flex pt-5">
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/aboutme" element={<AboutMe />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="portfolio-keuzedeel/" element={<Home />} />
+        <Route path="portfolio-keuzedeel/aboutme" element={<AboutMe />} />
+        <Route path="portfolio-keuzedeel/projects" element={<Projects />} />
+        <Route path="/portfolio-keuzedeel/contact" element={<Contact />} />
       </Routes>
     </div>
   </Router>,

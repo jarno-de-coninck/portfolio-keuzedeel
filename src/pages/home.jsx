@@ -13,7 +13,7 @@ function Home() {
             <button className='btn px-4 fw-bold text-white'><NavLink className="nav-link" to="/contact">Contact me</NavLink></button>
         </div>
         <div className="col-md-7 d-flex justify-content-end">
-          <img className='w-75' src="/images/mainPicture.png" alt="" />
+          <img className='w-75' src="./images/mainPicture.png" alt="" />
         </div>
       </div>
     </>
